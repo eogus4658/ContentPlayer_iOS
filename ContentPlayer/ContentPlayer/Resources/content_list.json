@@ -1,0 +1,25 @@
+{
+    "Contents":
+    [
+        {
+            "Genre": "드라마",
+            "Name": "<터치>",
+            "Description": "초밀착 뷰티 로맨스, 금토드라마 (2020)",
+            "Definition":   "고화질",
+            "VideoPath": "touch.mp4",
+            "ThumbPath": "touch_thumb.jpg",
+            "ScriptPath": "touch_utf8.json",
+            "CaptionPath": "touch.srt"
+        },
+        {
+            "Genre": "뉴스",
+            "Name": "<태풍경보>",
+            "Description": "28일 기상청이 발표한 15호태풍 볼라벤",
+            "Definition":   "표준화질",
+            "VideoPath": "typhoon.mp4",
+            "ThumbPath": "typhoon_thumb.jpg",
+            "ScriptPath": "CNUH_QUERY.json",
+            "CaptionPath": ""
+        }
+    ]
+}

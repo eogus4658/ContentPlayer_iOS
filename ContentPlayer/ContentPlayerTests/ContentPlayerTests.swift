@@ -9,6 +9,34 @@ import XCTest
 @testable import ContentPlayer
 
 final class ContentPlayerTests: XCTestCase {
+    
+    let contentJsonString = """
+{
+"Contents":
+[
+    {
+        "Genre": "드라마",
+        "Name": "<터치>",
+        "Description": "초밀착 뷰티 로맨스, 금토드라마 (2020)",
+        "Definition":   "고화질",
+        "VideoPath": "touch.mp4",
+        "ThumbPath": "touch_thumb.jpg",
+        "ScriptPath": "touch_utf8.json",
+        "CaptionPath": "touch.srt"
+    },
+    {
+        "Genre": "뉴스",
+        "Name": "<태풍경보>",
+        "Description": "28일 기상청이 발표한 15호태풍 볼라벤",
+        "Definition":   "표준화질",
+        "VideoPath": "typhoon.mp4",
+        "ThumbPath": "typhoon_thumb.jpg",
+        "ScriptPath": "CNUH_QUERY.json",
+        "CaptionPath": ""
+    }
+]
+}
+"""
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,12 +46,19 @@ final class ContentPlayerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testDecodingContentJson() throws {
+        let decoder = JSONDecoder()
+        let contentsJson = try decoder.decode(Contents.self, from: contentJsonString.data(using: .utf8)!)
+        let contents = contentsJson.Contents
+        XCTAssertEqual(contents[0].Genre, "드라마")
+        XCTAssertEqual(contents[1].Description, "28일 기상청이 발표한 15호태풍 볼라벤")
+    }
+    
+    func testJsonManager() throws {
+        let contentJson = JsonManager.shared.parse(type: Contents.self, json: contentJsonString)
+        let contents = contentJson.Contents
+        XCTAssertEqual(contents[0].Genre, "드라마")
+        XCTAssertEqual(contents[1].Description, "28일 기상청이 발표한 15호태풍 볼라벤")
     }
 
     func testPerformanceExample() throws {
