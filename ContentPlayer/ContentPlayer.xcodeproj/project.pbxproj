@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60B5C4D296BB9E000036286 /* ContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60B5C4C296BB9E000036286 /* ContentListViewController.swift */; };
 		A69A905E296BB39A00F11580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A905D296BB39A00F11580 /* AppDelegate.swift */; };
 		A69A9060296BB39A00F11580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A905F296BB39A00F11580 /* SceneDelegate.swift */; };
-		A69A9062296BB39A00F11580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A9061296BB39A00F11580 /* ViewController.swift */; };
 		A69A9065296BB39A00F11580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69A9063296BB39A00F11580 /* Main.storyboard */; };
 		A69A9067296BB39B00F11580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69A9066296BB39B00F11580 /* Assets.xcassets */; };
 		A69A906A296BB39B00F11580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69A9068296BB39B00F11580 /* LaunchScreen.storyboard */; };
@@ -36,10 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A60B5C4C296BB9E000036286 /* ContentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentListViewController.swift; sourceTree = "<group>"; };
 		A69A905A296BB39A00F11580 /* ContentPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69A905D296BB39A00F11580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69A905F296BB39A00F11580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A69A9061296BB39A00F11580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A69A9064296BB39A00F11580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A69A9066296BB39B00F11580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69A9069296BB39B00F11580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		A69A9090296BB46200F11580 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				A69A9061296BB39A00F11580 /* ViewController.swift */,
+				A60B5C4C296BB9E000036286 /* ContentListViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69A9062296BB39A00F11580 /* ViewController.swift in Sources */,
+				A60B5C4D296BB9E000036286 /* ContentListViewController.swift in Sources */,
 				A69A905E296BB39A00F11580 /* AppDelegate.swift in Sources */,
 				A69A9060296BB39A00F11580 /* SceneDelegate.swift in Sources */,
 			);
@@ -376,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -436,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -494,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContentPlayer/Info.plist;
+				INFOPLIST_FILE = ContentPlayer/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -521,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContentPlayer/Info.plist;
+				INFOPLIST_FILE = ContentPlayer/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
