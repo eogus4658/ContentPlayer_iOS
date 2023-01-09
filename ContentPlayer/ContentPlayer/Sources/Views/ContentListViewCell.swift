@@ -28,5 +28,6 @@ class ContentListViewCell: UICollectionViewCell {
 
     func set(_ data: Content) {
         self.titleLabel.text = data.Name
+        self.thumbImageView.image = UIImage(named: data.ThumbPath)
     }
 }
