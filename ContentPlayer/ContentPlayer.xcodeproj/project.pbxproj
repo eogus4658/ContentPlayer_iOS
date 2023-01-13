@@ -90,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A68C26D129710AD400FA4F85 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A68C26C3296BF11800FA4F85 /* JsonManager.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		A69A9051296BB39A00F11580 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +151,7 @@
 				A69A908F296BB45300F11580 /* Views */,
 				A69A9090296BB46200F11580 /* VCs */,
 				A69A9091296BB47600F11580 /* Models */,
+				A68C26D129710AD400FA4F85 /* Library */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -168,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				A68C26BF296BEDE800FA4F85 /* Content.swift */,
-				A68C26C3296BF11800FA4F85 /* JsonManager.swift */,
 				A68C26CF297102A300FA4F85 /* SettingInfo.swift */,
 			);
 			path = Models;
