@@ -29,11 +29,12 @@ class ContentListViewController: UIViewController {
     
     private func loadContent() {
         guard let path = Bundle.main.path(forResource: "content_list", ofType: "json"),
-              let json = try? String(contentsOfFile: path)
+              let jsonString = try? String(contentsOfFile: path),
+              let jsonData = jsonString.data(using: .utf8)
         else {
             return
         }
-        contentData = JsonManager.shared.parse(type: Contents.self, json: json).Contents
+        contentData = JsonManager.shared.parse(type: Contents.self, data: jsonData).Contents
     }
     
     private func setContentInfo(_ content: Content) {

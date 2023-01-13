@@ -264,6 +264,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
                                             <color key="baseBackgroundColor" name="CPPurple"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTouchedSaveButton:" destination="Ryu-VE-Wcb" eventType="touchUpInside" id="c5o-IH-lex"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨텐츠 서버 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-D0-dbu">
                                         <rect key="frame" x="20" y="30" width="112" height="21"/>
@@ -288,6 +291,9 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="23"/>
                                             <color key="baseBackgroundColor" name="CPPurple"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTouchedCancelButton:" destination="Ryu-VE-Wcb" eventType="touchUpInside" id="hzz-OZ-KZx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -324,7 +330,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="6uN-wR-BTd"/>
                     <connections>
+                        <outlet property="captionColorSegment" destination="Yb0-7F-51H" id="HKD-6b-G71"/>
+                        <outlet property="captionSizeSegment" destination="voD-RY-cVh" id="xQe-lA-cUy"/>
                         <outlet property="settingView" destination="fPi-eh-J1G" id="Ner-YC-seg"/>
+                        <outlet property="urlTextField" destination="rFa-YR-jYB" id="1AO-t1-ZjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eT8-7Q-E90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

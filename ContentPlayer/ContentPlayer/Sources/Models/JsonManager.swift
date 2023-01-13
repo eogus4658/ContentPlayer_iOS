@@ -11,16 +11,22 @@ class JsonManager {
     static let shared = JsonManager()
     private init() {}
     
-    func parse<T: Codable>(type: T.Type, json: String) -> T {
-        guard let data = json.data(using: .utf8) else {
-            fatalError("Json String UTF-8 Encoding Error.")
-        }
+    func parse<T: Codable>(type: T.Type, data: Data) -> T {
         let decoder = JSONDecoder()
         do {
             let data = try decoder.decode(T.self, from: data)
             return data
         } catch {
             fatalError("Parsing Json Struct Error.")
+        }
+    }
+    
+    func encode<T: Codable>(from data: T) -> Data {
+        let encoder = JSONEncoder()
+        do {
+            return try encoder.encode(data)
+        } catch {
+            fatalError("Encoding Struct to Json Error.")
         }
     }
 }
