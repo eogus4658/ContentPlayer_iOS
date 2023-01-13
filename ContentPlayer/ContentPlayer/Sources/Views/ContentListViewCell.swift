@@ -14,7 +14,7 @@ class ContentListViewCell: UICollectionViewCell {
     override var isSelected: Bool {
         didSet {
             if isSelected {
-                backgroundColor = .systemGray5
+                backgroundColor = UIColor(named: "CPLightPurple")
             } else {
                 backgroundColor = .white
             }
