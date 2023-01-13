@@ -19,6 +19,9 @@
 		A68C26D62971249D00FA4F85 /* touch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A68C26D42971249D00FA4F85 /* touch.mp4 */; };
 		A68C26D72971249D00FA4F85 /* typhoon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A68C26D52971249D00FA4F85 /* typhoon.mp4 */; };
 		A68C26D92971405A00FA4F85 /* Int+TimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26D82971405A00FA4F85 /* Int+TimeFormat.swift */; };
+		A68C26DB297144C200FA4F85 /* typhoon_script.json in Resources */ = {isa = PBXBuildFile; fileRef = A68C26DA297144C200FA4F85 /* typhoon_script.json */; };
+		A68C26DD297144C900FA4F85 /* touch_script.json in Resources */ = {isa = PBXBuildFile; fileRef = A68C26DC297144C900FA4F85 /* touch_script.json */; };
+		A68C26DF2971452400FA4F85 /* SubScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26DE2971452400FA4F85 /* SubScript.swift */; };
 		A69A905E296BB39A00F11580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A905D296BB39A00F11580 /* AppDelegate.swift */; };
 		A69A9060296BB39A00F11580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A905F296BB39A00F11580 /* SceneDelegate.swift */; };
 		A69A9065296BB39A00F11580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69A9063296BB39A00F11580 /* Main.storyboard */; };
@@ -58,6 +61,9 @@
 		A68C26D42971249D00FA4F85 /* touch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = touch.mp4; sourceTree = "<group>"; };
 		A68C26D52971249D00FA4F85 /* typhoon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = typhoon.mp4; sourceTree = "<group>"; };
 		A68C26D82971405A00FA4F85 /* Int+TimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+TimeFormat.swift"; sourceTree = "<group>"; };
+		A68C26DA297144C200FA4F85 /* typhoon_script.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = typhoon_script.json; sourceTree = "<group>"; };
+		A68C26DC297144C900FA4F85 /* touch_script.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = touch_script.json; sourceTree = "<group>"; };
+		A68C26DE2971452400FA4F85 /* SubScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScript.swift; sourceTree = "<group>"; };
 		A69A905A296BB39A00F11580 /* ContentPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69A905D296BB39A00F11580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69A905F296BB39A00F11580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 			children = (
 				A68C26BF296BEDE800FA4F85 /* Content.swift */,
 				A68C26CF297102A300FA4F85 /* SettingInfo.swift */,
+				A68C26DE2971452400FA4F85 /* SubScript.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +211,8 @@
 			children = (
 				A68C26D42971249D00FA4F85 /* touch.mp4 */,
 				A68C26D52971249D00FA4F85 /* typhoon.mp4 */,
+				A68C26DA297144C200FA4F85 /* typhoon_script.json */,
+				A68C26DC297144C900FA4F85 /* touch_script.json */,
 				A68C26C1296BEE0A00FA4F85 /* content_list.json */,
 				A69A905D296BB39A00F11580 /* AppDelegate.swift */,
 				A69A905F296BB39A00F11580 /* SceneDelegate.swift */,
@@ -333,6 +342,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68C26DD297144C900FA4F85 /* touch_script.json in Resources */,
+				A68C26DB297144C200FA4F85 /* typhoon_script.json in Resources */,
 				A69A906A296BB39B00F11580 /* LaunchScreen.storyboard in Resources */,
 				A68C26D62971249D00FA4F85 /* touch.mp4 in Resources */,
 				A69A9067296BB39B00F11580 /* Assets.xcassets in Resources */,
@@ -371,6 +382,7 @@
 				A68C26CE2970EE9200FA4F85 /* SettingViewController.swift in Sources */,
 				A68C26D32971213200FA4F85 /* VideoViewController.swift in Sources */,
 				A68C26D0297102A300FA4F85 /* SettingInfo.swift in Sources */,
+				A68C26DF2971452400FA4F85 /* SubScript.swift in Sources */,
 				A69A9060296BB39A00F11580 /* SceneDelegate.swift in Sources */,
 				A68C26D92971405A00FA4F85 /* Int+TimeFormat.swift in Sources */,
 			);
