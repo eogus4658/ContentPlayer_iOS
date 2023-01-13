@@ -183,7 +183,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Ryu-VE-Wcb" kind="presentation" id="hQy-BW-ZBE"/>
+                                    <segue destination="Ryu-VE-Wcb" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="hQy-BW-ZBE"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -216,83 +216,120 @@
             </objects>
             <point key="canvasLocation" x="2531" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="NKF-1L-nwE">
             <objects>
-                <viewController id="Ryu-VE-Wcb" sceneMemberID="viewController">
+                <viewController id="Ryu-VE-Wcb" customClass="SettingViewController" customModule="ContentPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Lg-fI-F0U">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huD-Wn-vb8">
-                                <rect key="frame" x="37" y="53" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="컨텐츠 서버 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-D0-dbu">
-                                <rect key="frame" x="37" y="124" width="112" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자막 크기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyW-yX-6bO">
-                                <rect key="frame" x="37" y="205" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자막 배경색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvN-FQ-Csc">
-                                <rect key="frame" x="37" y="292" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="voD-RY-cVh">
-                                <rect key="frame" x="45" y="243" width="299" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="작게"/>
-                                    <segment title="보통"/>
-                                    <segment title="크게"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-7F-51H">
-                                <rect key="frame" x="45" y="337" width="299" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="검정배경에 하얀색"/>
-                                    <segment title="하얀배경에 검정색"/>
-                                </segments>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2U-Pc-F7v">
-                                <rect key="frame" x="56" y="640" width="276" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="확인">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                    <color key="baseBackgroundColor" name="CPPurple"/>
-                                </buttonConfiguration>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFa-YR-jYB">
-                                <rect key="frame" x="45" y="153" width="287" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPi-eh-J1G">
+                                <rect key="frame" x="35" y="262" width="323" height="353"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="voD-RY-cVh">
+                                        <rect key="frame" x="20" y="141" width="283" height="32"/>
+                                        <segments>
+                                            <segment title="작게"/>
+                                            <segment title="보통"/>
+                                            <segment title="크게"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자막 배경색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvN-FQ-Csc">
+                                        <rect key="frame" x="20" y="187" width="78" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-7F-51H">
+                                        <rect key="frame" x="20" y="218" width="283" height="32"/>
+                                        <segments>
+                                            <segment title="검정배경에 하얀색"/>
+                                            <segment title="하얀배경에 검정색"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFa-YR-jYB">
+                                        <rect key="frame" x="20" y="61" width="283" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2U-Pc-F7v">
+                                        <rect key="frame" x="173" y="284" width="130" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="OOr-2N-onz"/>
+                                            <constraint firstAttribute="height" constant="50" id="sqm-TS-HxY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="저장">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                            <color key="baseBackgroundColor" name="CPPurple"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨텐츠 서버 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-D0-dbu">
+                                        <rect key="frame" x="20" y="30" width="112" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자막 크기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyW-yX-6bO">
+                                        <rect key="frame" x="20" y="110" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2L-SS-vGO">
+                                        <rect key="frame" x="20" y="284" width="130" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="mLi-CL-aYy"/>
+                                            <constraint firstAttribute="height" constant="50" id="pGB-4d-d2a"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="취소">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="23"/>
+                                            <color key="baseBackgroundColor" name="CPPurple"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="uCI-D0-dbu" firstAttribute="top" secondItem="fPi-eh-J1G" secondAttribute="top" constant="30" id="1vp-Ny-qjf"/>
+                                    <constraint firstAttribute="width" constant="323" id="2uW-jI-dxo"/>
+                                    <constraint firstItem="rFa-YR-jYB" firstAttribute="top" secondItem="uCI-D0-dbu" secondAttribute="bottom" constant="10" id="33f-u4-LKf"/>
+                                    <constraint firstItem="WvN-FQ-Csc" firstAttribute="leading" secondItem="voD-RY-cVh" secondAttribute="leading" id="6hi-Qj-DRz"/>
+                                    <constraint firstItem="voD-RY-cVh" firstAttribute="leading" secondItem="XyW-yX-6bO" secondAttribute="leading" id="CC6-TK-62K"/>
+                                    <constraint firstItem="XyW-yX-6bO" firstAttribute="top" secondItem="rFa-YR-jYB" secondAttribute="bottom" constant="15" id="IEL-Ve-wpy"/>
+                                    <constraint firstItem="y2L-SS-vGO" firstAttribute="top" secondItem="Yb0-7F-51H" secondAttribute="bottom" constant="35" id="bAN-01-z4N"/>
+                                    <constraint firstItem="z2U-Pc-F7v" firstAttribute="top" secondItem="Yb0-7F-51H" secondAttribute="bottom" constant="35" id="bbZ-sm-ELe"/>
+                                    <constraint firstItem="z2U-Pc-F7v" firstAttribute="trailing" secondItem="Yb0-7F-51H" secondAttribute="trailing" id="cfh-rT-Jua"/>
+                                    <constraint firstItem="WvN-FQ-Csc" firstAttribute="top" secondItem="voD-RY-cVh" secondAttribute="bottom" constant="15" id="csh-fP-4vz"/>
+                                    <constraint firstAttribute="height" constant="353" id="duq-nR-wJI"/>
+                                    <constraint firstItem="rFa-YR-jYB" firstAttribute="leading" secondItem="uCI-D0-dbu" secondAttribute="leading" id="eNG-cX-Tc3"/>
+                                    <constraint firstItem="XyW-yX-6bO" firstAttribute="leading" secondItem="rFa-YR-jYB" secondAttribute="leading" id="h2v-jv-9Hk"/>
+                                    <constraint firstItem="Yb0-7F-51H" firstAttribute="top" secondItem="WvN-FQ-Csc" secondAttribute="bottom" constant="10" id="hn9-9t-rdU"/>
+                                    <constraint firstItem="voD-RY-cVh" firstAttribute="trailing" secondItem="rFa-YR-jYB" secondAttribute="trailing" id="ny6-sd-FjV"/>
+                                    <constraint firstItem="voD-RY-cVh" firstAttribute="top" secondItem="XyW-yX-6bO" secondAttribute="bottom" constant="10" id="oJC-tq-zNz"/>
+                                    <constraint firstItem="y2L-SS-vGO" firstAttribute="leading" secondItem="Yb0-7F-51H" secondAttribute="leading" id="pgg-bm-aIV"/>
+                                    <constraint firstItem="Yb0-7F-51H" firstAttribute="leading" secondItem="voD-RY-cVh" secondAttribute="leading" id="sSP-FN-7dN"/>
+                                    <constraint firstItem="Yb0-7F-51H" firstAttribute="trailing" secondItem="voD-RY-cVh" secondAttribute="trailing" id="tZc-Yr-tHW"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFa-YR-jYB" secondAttribute="trailing" constant="20" id="wug-GP-FZZ"/>
+                                    <constraint firstItem="uCI-D0-dbu" firstAttribute="leading" secondItem="fPi-eh-J1G" secondAttribute="leading" constant="20" id="ykS-gZ-6g6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yX4-pP-dvm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fPi-eh-J1G" firstAttribute="centerX" secondItem="yX4-pP-dvm" secondAttribute="centerX" id="CNI-0i-ULS"/>
+                            <constraint firstItem="fPi-eh-J1G" firstAttribute="centerY" secondItem="yX4-pP-dvm" secondAttribute="centerY" id="DO9-9O-8wi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6uN-wR-BTd"/>
+                    <connections>
+                        <outlet property="settingView" destination="fPi-eh-J1G" id="Ner-YC-seg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eT8-7Q-E90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531" y="-573"/>
+            <point key="canvasLocation" x="2530.5343511450383" y="-573.23943661971839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9ir-XX-AKT">

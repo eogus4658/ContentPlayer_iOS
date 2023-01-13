@@ -13,6 +13,7 @@
 		A68C26C2296BEE0A00FA4F85 /* content_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A68C26C1296BEE0A00FA4F85 /* content_list.json */; };
 		A68C26C4296BF11800FA4F85 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26C3296BF11800FA4F85 /* JsonManager.swift */; };
 		A68C26C7296BFF4200FA4F85 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A68C26C6296BFF4200FA4F85 /* Kingfisher */; };
+		A68C26CE2970EE9200FA4F85 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26CD2970EE9200FA4F85 /* SettingViewController.swift */; };
 		A69A905E296BB39A00F11580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A905D296BB39A00F11580 /* AppDelegate.swift */; };
 		A69A9060296BB39A00F11580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A905F296BB39A00F11580 /* SceneDelegate.swift */; };
 		A69A9065296BB39A00F11580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69A9063296BB39A00F11580 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		A68C26BF296BEDE800FA4F85 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		A68C26C1296BEE0A00FA4F85 /* content_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content_list.json; sourceTree = "<group>"; };
 		A68C26C3296BF11800FA4F85 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		A68C26CD2970EE9200FA4F85 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A69A905A296BB39A00F11580 /* ContentPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69A905D296BB39A00F11580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69A905F296BB39A00F11580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A60B5C4C296BB9E000036286 /* ContentListViewController.swift */,
+				A68C26CD2970EE9200FA4F85 /* SettingViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				A68C26BE296BC29A00FA4F85 /* ContentListViewCell.swift in Sources */,
 				A68C26C4296BF11800FA4F85 /* JsonManager.swift in Sources */,
 				A68C26C0296BEDE800FA4F85 /* Content.swift in Sources */,
+				A68C26CE2970EE9200FA4F85 /* SettingViewController.swift in Sources */,
 				A69A9060296BB39A00F11580 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
