@@ -16,7 +16,6 @@
 		A68C26CE2970EE9200FA4F85 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26CD2970EE9200FA4F85 /* SettingViewController.swift */; };
 		A68C26D0297102A300FA4F85 /* SettingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26CF297102A300FA4F85 /* SettingInfo.swift */; };
 		A68C26D32971213200FA4F85 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26D22971213200FA4F85 /* VideoViewController.swift */; };
-		A68C26D62971249D00FA4F85 /* touch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A68C26D42971249D00FA4F85 /* touch.mp4 */; };
 		A68C26D72971249D00FA4F85 /* typhoon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A68C26D52971249D00FA4F85 /* typhoon.mp4 */; };
 		A68C26D92971405A00FA4F85 /* Int+TimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C26D82971405A00FA4F85 /* Int+TimeFormat.swift */; };
 		A68C26DB297144C200FA4F85 /* typhoon_script.json in Resources */ = {isa = PBXBuildFile; fileRef = A68C26DA297144C200FA4F85 /* typhoon_script.json */; };
@@ -58,7 +57,6 @@
 		A68C26CD2970EE9200FA4F85 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A68C26CF297102A300FA4F85 /* SettingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInfo.swift; sourceTree = "<group>"; };
 		A68C26D22971213200FA4F85 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
-		A68C26D42971249D00FA4F85 /* touch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = touch.mp4; sourceTree = "<group>"; };
 		A68C26D52971249D00FA4F85 /* typhoon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = typhoon.mp4; sourceTree = "<group>"; };
 		A68C26D82971405A00FA4F85 /* Int+TimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+TimeFormat.swift"; sourceTree = "<group>"; };
 		A68C26DA297144C200FA4F85 /* typhoon_script.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = typhoon_script.json; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 		A69A9093296BB4A300F11580 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A68C26D42971249D00FA4F85 /* touch.mp4 */,
 				A68C26D52971249D00FA4F85 /* typhoon.mp4 */,
 				A68C26DA297144C200FA4F85 /* typhoon_script.json */,
 				A68C26DC297144C900FA4F85 /* touch_script.json */,
@@ -345,7 +342,6 @@
 				A68C26DD297144C900FA4F85 /* touch_script.json in Resources */,
 				A68C26DB297144C200FA4F85 /* typhoon_script.json in Resources */,
 				A69A906A296BB39B00F11580 /* LaunchScreen.storyboard in Resources */,
-				A68C26D62971249D00FA4F85 /* touch.mp4 in Resources */,
 				A69A9067296BB39B00F11580 /* Assets.xcassets in Resources */,
 				A68C26D72971249D00FA4F85 /* typhoon.mp4 in Resources */,
 				A69A9065296BB39A00F11580 /* Main.storyboard in Resources */,
