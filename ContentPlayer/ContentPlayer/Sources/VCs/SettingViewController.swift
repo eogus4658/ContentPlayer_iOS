@@ -55,6 +55,7 @@ class SettingViewController: UIViewController {
     @IBAction func didTouchedCancelButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
+    
     @IBAction func didTouchedSaveButton(_ sender: Any) {
         saveSettings()
         self.dismiss(animated: true)

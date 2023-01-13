@@ -200,21 +200,56 @@
             </objects>
             <point key="canvasLocation" x="1754.9618320610687" y="-275.35211267605638"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller-->
         <scene sceneID="NFz-oj-D0c">
             <objects>
-                <viewController id="PDY-Z8-lqT" sceneMemberID="viewController">
+                <viewController id="PDY-Z8-lqT" customClass="VideoViewController" customModule="ContentPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uDq-f6-KdD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41w-sV-d1y">
+                                <rect key="frame" x="161" y="113" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14일 이내 국내 집ㅂ단어쩌구저쩌구" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb8-bD-syi">
+                                <rect key="frame" x="16" y="377" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csH-GL-FpI">
+                                <rect key="frame" x="16" y="144" width="361" height="203"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="csH-GL-FpI" secondAttribute="height" multiplier="16:9" id="nKR-fZ-fE5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GTO-pT-3x3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="41w-sV-d1y" firstAttribute="centerX" secondItem="GTO-pT-3x3" secondAttribute="centerX" id="3vp-fN-dpU"/>
+                            <constraint firstItem="hb8-bD-syi" firstAttribute="trailing" secondItem="csH-GL-FpI" secondAttribute="trailing" id="DEO-S4-nV5"/>
+                            <constraint firstItem="csH-GL-FpI" firstAttribute="centerX" secondItem="GTO-pT-3x3" secondAttribute="centerX" id="HSR-7Z-Jvw"/>
+                            <constraint firstItem="csH-GL-FpI" firstAttribute="leading" secondItem="GTO-pT-3x3" secondAttribute="leading" constant="16" id="PZa-GU-YC8"/>
+                            <constraint firstItem="hb8-bD-syi" firstAttribute="top" secondItem="csH-GL-FpI" secondAttribute="bottom" constant="30" id="ZyL-lq-aJa"/>
+                            <constraint firstItem="GTO-pT-3x3" firstAttribute="trailing" secondItem="csH-GL-FpI" secondAttribute="trailing" constant="16" id="b9s-AH-y4g"/>
+                            <constraint firstItem="41w-sV-d1y" firstAttribute="top" secondItem="GTO-pT-3x3" secondAttribute="top" constant="10" id="jOU-pI-qeq"/>
+                            <constraint firstItem="hb8-bD-syi" firstAttribute="leading" secondItem="csH-GL-FpI" secondAttribute="leading" id="m1V-Ax-KZU"/>
+                            <constraint firstItem="csH-GL-FpI" firstAttribute="top" secondItem="41w-sV-d1y" secondAttribute="bottom" constant="10" id="veM-WE-47B"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZGN-KT-U6e"/>
+                    <connections>
+                        <outlet property="videoView" destination="csH-GL-FpI" id="k72-Ou-rTi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad7-xN-vXu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531" y="92"/>
+            <point key="canvasLocation" x="2530.5343511450383" y="91.549295774647888"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="NKF-1L-nwE">
