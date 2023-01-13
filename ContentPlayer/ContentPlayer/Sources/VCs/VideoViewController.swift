@@ -10,6 +10,7 @@ import AVFoundation
 import AVKit
 
 class VideoViewController: UIViewController {
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var videoView: UIView!
     
     private var player: AVPlayer!
@@ -33,6 +34,17 @@ class VideoViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        videoPlay()
+    }
+    
+    private func videoPlay() {
         player.play()
+
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
+            let timeString = Int(self.player.currentTime().seconds).timeFormat()
+            DispatchQueue.main.async { [weak self] in
+                self?.timeLabel.text = timeString
+            }
+        })
     }
 }

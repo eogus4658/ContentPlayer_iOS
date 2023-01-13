@@ -244,6 +244,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZGN-KT-U6e"/>
                     <connections>
+                        <outlet property="timeLabel" destination="41w-sV-d1y" id="Ufb-jg-DN6"/>
                         <outlet property="videoView" destination="csH-GL-FpI" id="k72-Ou-rTi"/>
                     </connections>
                 </viewController>

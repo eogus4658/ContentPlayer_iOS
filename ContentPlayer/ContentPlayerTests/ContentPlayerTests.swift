@@ -55,10 +55,21 @@ final class ContentPlayerTests: XCTestCase {
     }
     
     func testJsonManager() throws {
-        let contentJson = JsonManager.shared.parse(type: Contents.self, json: contentJsonString)
+        let contentJson = JsonManager.shared.parse(type: Contents.self, data: contentJsonString.data(using: .utf8)!)
         let contents = contentJson.Contents
         XCTAssertEqual(contents[0].Genre, "드라마")
         XCTAssertEqual(contents[1].Description, "28일 기상청이 발표한 15호태풍 볼라벤")
+    }
+    
+    func testTimeFormat() throws {
+        let a: Int = 3
+        XCTAssertEqual(a.timeFormat(), "00:00:03")
+        let b: Int = 60
+        XCTAssertEqual(b.timeFormat(), "00:01:00")
+        let c: Int = 3600
+        XCTAssertEqual(c.timeFormat(), "01:00:00")
+        let d: Int = 3661
+        XCTAssertEqual(d.timeFormat(), "01:01:01")
     }
 
     func testPerformanceExample() throws {
