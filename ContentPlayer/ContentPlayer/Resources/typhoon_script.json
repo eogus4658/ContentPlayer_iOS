@@ -62,7 +62,7 @@
     "ID": "4",
     "StartTime": "00:00:20,000",
     "EndTime": "00:00:24,000",
-    "Korean": "테스트 자막 3",
+    "Korean": "테스트 자막 4",
     "KSLWords": [
         "10%NUM",
         "4%NUM",
@@ -81,7 +81,7 @@
     "ID": "5",
     "StartTime": "00:00:25,000",
     "EndTime": "00:00:29,000",
-    "Korean": "테스트 자막 3",
+    "Korean": "테스트 자막 5",
     "KSLWords": [
         "10%NUM",
         "4%NUM",
@@ -100,7 +100,7 @@
     "ID": "6",
     "StartTime": "00:00:30,000",
     "EndTime": "00:00:34,000",
-    "Korean": "테스트 자막 4",
+    "Korean": "테스트 자막 6",
     "KSLWords": [
         "10%NUM",
         "4%NUM",

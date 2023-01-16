@@ -42,9 +42,6 @@ class VideoViewController: UIViewController {
             return
         }
         subScript = JsonManager.shared.parse(type: SubScript.self, data: jsonData)
-        /*TODO: Test Code*/
-        self.subscriptLabel.text = subScript.Scripts.first?.Korean
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -61,9 +58,11 @@ class VideoViewController: UIViewController {
         player.play()
 
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
-            let timeString = Int(self.player.currentTime().seconds).timeFormat()
+            let time = self.player.currentTime().seconds
+            let timeString = Int(time).timeFormat()
             DispatchQueue.main.async { [weak self] in
                 self?.timeLabel.text = timeString
+                self?.subscriptLabel.text = self?.subScript.currentScript(time: time)
             }
         })
     }

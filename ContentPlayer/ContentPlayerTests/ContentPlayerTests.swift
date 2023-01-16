@@ -71,6 +71,12 @@ final class ContentPlayerTests: XCTestCase {
         let d: Int = 3661
         XCTAssertEqual(d.timeFormat(), "01:01:01")
     }
+    
+    func testDateToTime() throws {
+        let a: String = "00:00:01,123"
+        let timeA = a.toSecond()
+        print(timeA)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
