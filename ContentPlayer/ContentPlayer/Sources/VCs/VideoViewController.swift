@@ -29,7 +29,7 @@ class VideoViewController: UIViewController {
             let url = NSURL(fileURLWithPath: path)
             player = AVPlayer(url: url as URL)
             playerLayer = AVPlayerLayer(player: player)
-            playerLayer.videoGravity = .resize
+            playerLayer.videoGravity = .resizeAspect
             videoView.layer.addSublayer(playerLayer)
         }
     }
