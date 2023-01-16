@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class ContentListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -15,6 +16,7 @@ class ContentListViewController: UIViewController {
     @IBOutlet weak var qualityLabel: UILabel!
     
     private var contentData: [Content] = []
+    private var selectedContent: Content?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +24,35 @@ class ContentListViewController: UIViewController {
     }
     
     private func setCollectionView() {
-        loadContent()
+//        loadContent()
+        loadContentFirebase()
         collectionView.dataSource = self
         collectionView.delegate = self
+    }
+    
+    private func loadContentFirebase() {
+        let db = Firestore.firestore()
+        db.collection("Content").getDocuments { querySnapshot, err in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                guard let documents = querySnapshot?.documents else { return }
+                for document in documents {
+                    let data = document.data()
+                    self.contentData.append(Content(
+                        Genre: data["genre"] as! String,
+                        Name: data["name"] as! String,
+                        Description: data["description"] as! String,
+                        Definition: data["definition"] as! String,
+                        VideoPath: data["videoPath"] as! String,
+                        ThumbPath: data["thumbPath"] as! String,
+                        ScriptPath: data["scriptPath"] as! String,
+                        CaptionPath: ""
+                    ))
+                }
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     private func loadContent() {
@@ -64,6 +92,16 @@ extension ContentListViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedContent = contentData[indexPath.row]
         self.setContentInfo(contentData[indexPath.row])
+    }
+}
+
+extension ContentListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dst = segue.destination as? VideoViewController {
+            dst.videoPath = selectedContent?.VideoPath
+            dst.scriptPath = selectedContent?.ScriptPath
+        }
     }
 }

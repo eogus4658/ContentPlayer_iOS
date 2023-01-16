@@ -28,6 +28,12 @@ class ContentListViewCell: UICollectionViewCell {
 
     func set(_ data: Content) {
         self.titleLabel.text = data.Name
-        self.thumbImageView.image = UIImage(named: data.ThumbPath)
+        Task {
+            if let image = await data.image() {
+                self.thumbImageView.image = image
+            } else {
+                self.thumbImageView.image = UIImage(named: data.ThumbPath)
+            }
+        }
     }
 }
