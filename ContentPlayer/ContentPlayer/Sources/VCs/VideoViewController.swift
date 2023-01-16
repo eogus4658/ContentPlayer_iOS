@@ -8,7 +8,6 @@
 import UIKit
 import AVFoundation
 import AVKit
-import FirebaseStorage
 
 class VideoViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
