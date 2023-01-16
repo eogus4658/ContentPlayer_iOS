@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseFirestore
 
 class ContentListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -31,27 +30,13 @@ class ContentListViewController: UIViewController {
     }
     
     private func loadContentFirebase() {
-        let db = Firestore.firestore()
-        db.collection("Content").getDocuments { querySnapshot, err in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                guard let documents = querySnapshot?.documents else { return }
-                for document in documents {
-                    let data = document.data()
-                    self.contentData.append(Content(
-                        Genre: data["genre"] as! String,
-                        Name: data["name"] as! String,
-                        Description: data["description"] as! String,
-                        Definition: data["definition"] as! String,
-                        VideoPath: data["videoPath"] as! String,
-                        ThumbPath: data["thumbPath"] as! String,
-                        ScriptPath: data["scriptPath"] as! String,
-                        CaptionPath: ""
-                    ))
-                }
-                self.collectionView.reloadData()
+        StorageManager.shared.get(name: "content_list.json") { (url, err) in
+            guard let url = url,
+                  let data = try? Data(contentsOf: url) else {
+                print("Error getting firebase storage: \(err)")
+                return
             }
+            self.contentData = JsonManager.shared.parse(type: Contents.self, data: data).Contents
         }
     }
     

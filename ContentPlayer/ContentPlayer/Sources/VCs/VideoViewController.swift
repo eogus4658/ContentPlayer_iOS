@@ -19,7 +19,6 @@ class VideoViewController: UIViewController {
     private var playerLayer: AVPlayerLayer?
     private var subScript: SubScript?
     
-    let storage = Storage.storage()
     var videoPath: String?
     var scriptPath: String?
     
@@ -43,7 +42,7 @@ class VideoViewController: UIViewController {
     }
     
     private func setVideoStorage(path: String) {
-        storage.reference(forURL: "gs://contentplayer-a8f09.appspot.com/\(path)").downloadURL { (url, err) in
+        StorageManager.shared.get(name: path) { (url, err) in
             guard let url = url else {
                 print("Error getting firebase storage: \(err)")
                 return
@@ -70,7 +69,7 @@ class VideoViewController: UIViewController {
     }
     
     private func setSubScriptStorage(path: String) {
-        storage.reference(forURL: "gs://contentplayer-a8f09.appspot.com/\(path)").downloadURL { (url, err) in
+        StorageManager.shared.get(name: path) { (url, err) in
             guard let url = url,
                   let data = try? Data(contentsOf: url) else {
                 print("Error getting firebase storage")
