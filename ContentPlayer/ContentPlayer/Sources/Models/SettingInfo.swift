@@ -22,5 +22,5 @@ enum CaptionSize: Int, Codable {
 }
 
 enum CaptionColor: Int, Codable {
-    case light = 0, dark
+    case dark = 0, light
 }

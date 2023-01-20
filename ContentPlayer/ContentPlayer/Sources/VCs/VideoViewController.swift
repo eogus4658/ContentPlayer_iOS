@@ -27,6 +27,9 @@ class VideoViewController: UIViewController {
     }
     
     private func configureUI() {
+        if let scriptSetting = UserManager.shared.settingInfo {
+            setScriptUI(setting: scriptSetting)
+        }
         if let videoPath = videoPath {
             setVideoStorage(path: videoPath)
         } else {
@@ -37,6 +40,26 @@ class VideoViewController: UIViewController {
             setSubScriptStorage(path: scriptPath)
         } else {
             setSubScript()
+        }
+    }
+    
+    private func setScriptUI(setting: SettingInfo) {
+        switch setting.caption.color {
+        case .dark:
+            self.subscriptLabel.backgroundColor = .black
+            self.subscriptLabel.textColor = .white
+        case .light:
+            self.subscriptLabel.backgroundColor = .white
+            self.subscriptLabel.textColor = .black
+        }
+        
+        switch setting.caption.size {
+        case .small:
+            self.subscriptLabel.font = .systemFont(ofSize: 12)
+        case .medium:
+            self.subscriptLabel.font = .systemFont(ofSize: 17)
+        case .large:
+            self.subscriptLabel.font = .systemFont(ofSize: 22)
         }
     }
     

@@ -23,8 +23,8 @@ class ContentListViewController: UIViewController {
     }
     
     private func setCollectionView() {
-        loadContent()
-//        loadContentFirebase()
+//        loadContent()
+        loadContentFirebase()
         collectionView.dataSource = self
         collectionView.delegate = self
     }

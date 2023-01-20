@@ -26,12 +26,10 @@ class SettingViewController: UIViewController {
     }
     
     private func loadSettings() {
-        if let settingData = UserDefaults.standard.data(forKey: "setting") {
-            let settingInfo = JsonManager.shared.parse(type: SettingInfo.self, data: settingData)
-            self.urlTextField.text = settingInfo.url
-            self.captionSizeSegment.selectedSegmentIndex = settingInfo.caption.size.rawValue
-            self.captionColorSegment.selectedSegmentIndex = settingInfo.caption.color.rawValue
-        }
+        guard let initial = UserManager.shared.settingInfo else { return }
+        self.urlTextField.text = initial.url
+        self.captionSizeSegment.selectedSegmentIndex = initial.caption.size.rawValue
+        self.captionColorSegment.selectedSegmentIndex = initial.caption.color.rawValue
     }
     
     private func saveSettings() {

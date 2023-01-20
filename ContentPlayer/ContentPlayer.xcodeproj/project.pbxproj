@@ -37,6 +37,7 @@
 		A6C8A3F22974FA1200AE2268 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A6C8A3F12974FA1200AE2268 /* FirebaseFirestore */; };
 		A6C8A3F42974FA1200AE2268 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A6C8A3F32974FA1200AE2268 /* FirebaseStorage */; };
 		A6C8A3F62975355B00AE2268 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8A3F52975355B00AE2268 /* StorageManager.swift */; };
+		A6C8A3F8297A1C1000AE2268 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8A3F7297A1C1000AE2268 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		A69A9080296BB39C00F11580 /* ContentPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A6C8A3EA2974F95700AE2268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6C8A3F52975355B00AE2268 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A6C8A3F7297A1C1000AE2268 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				A68C26C3296BF11800FA4F85 /* JsonManager.swift */,
 				A6C8A3F52975355B00AE2268 /* StorageManager.swift */,
+				A6C8A3F7297A1C1000AE2268 /* UserManager.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			files = (
 				A60B5C4D296BB9E000036286 /* ContentListViewController.swift in Sources */,
 				A69A905E296BB39A00F11580 /* AppDelegate.swift in Sources */,
+				A6C8A3F8297A1C1000AE2268 /* UserManager.swift in Sources */,
 				A68C26BE296BC29A00FA4F85 /* ContentListViewCell.swift in Sources */,
 				A68C26C4296BF11800FA4F85 /* JsonManager.swift in Sources */,
 				A68C26C0296BEDE800FA4F85 /* Content.swift in Sources */,
