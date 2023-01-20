@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--컨텐츠 플레이어 1.0-->
+        <!--ContentPlayer 1.0-->
         <scene sceneID="v9Q-Hb-7IX">
             <objects>
                 <viewController id="bQg-I9-ael" customClass="ContentListViewController" customModule="ContentPlayer" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,11 +24,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-wT-u3g">
-                                <rect key="frame" x="30" y="362" width="60" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-wT-u3g">
+                                <rect key="frame" x="30.000000000000004" y="362" width="42.333333333333343" height="35"/>
                                 <color key="backgroundColor" name="CPLightPurple"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="04j-Xg-MFF"/>
                                     <constraint firstAttribute="height" constant="35" id="eJH-Pn-W7a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
@@ -36,16 +35,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdJ-UG-gDB">
-                                <rect key="frame" x="120" y="379.66666666666669" width="0.0" height="0.0"/>
+                                <rect key="frame" x="102.33333333333333" y="379.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상세" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk8-gq-2ci">
-                                <rect key="frame" x="30" y="417" width="60" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk8-gq-2ci">
+                                <rect key="frame" x="30.000000000000007" y="417" width="112.66666666666669" height="35"/>
                                 <color key="backgroundColor" name="CPLightPurple"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="DGp-bE-w7h"/>
                                     <constraint firstAttribute="height" constant="35" id="yLV-LD-pe8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
@@ -53,16 +51,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cu-hz-FeE">
-                                <rect key="frame" x="120" y="434.66666666666669" width="243" height="0.0"/>
+                                <rect key="frame" x="172.66666666666666" y="434.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화질" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-lP-CzP">
-                                <rect key="frame" x="30" y="472" width="60" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-lP-CzP">
+                                <rect key="frame" x="29.999999999999993" y="472" width="69.333333333333314" height="35"/>
                                 <color key="backgroundColor" name="CPLightPurple"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="cJI-5y-k1B"/>
                                     <constraint firstAttribute="height" constant="35" id="rZ0-Vm-Qxy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
@@ -70,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmO-xc-nGn">
-                                <rect key="frame" x="120" y="489.66666666666669" width="0.0" height="0.0"/>
+                                <rect key="frame" x="129.33333333333334" y="489.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +76,7 @@
                                 <rect key="frame" x="58" y="737" width="276" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="재생하기">
+                                <buttonConfiguration key="configuration" style="filled" title="Play">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                                     <color key="baseBackgroundColor" name="CPPurple"/>
                                 </buttonConfiguration>
@@ -136,11 +133,10 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장르" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7b-lE-xjx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7b-lE-xjx">
                                 <rect key="frame" x="30" y="307" width="60" height="35"/>
                                 <color key="backgroundColor" name="CPLightPurple"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="9x9-G7-CHa"/>
                                     <constraint firstAttribute="height" constant="35" id="kLB-wQ-CL4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
@@ -169,11 +165,10 @@
                             <constraint firstItem="BdJ-UG-gDB" firstAttribute="leading" secondItem="Fva-wT-u3g" secondAttribute="trailing" constant="30" id="ndJ-tA-esk"/>
                             <constraint firstItem="f1J-im-Hfz" firstAttribute="trailing" secondItem="YRh-jC-TGc" secondAttribute="trailing" constant="30" id="obJ-93-EoD"/>
                             <constraint firstItem="8cu-hz-FeE" firstAttribute="leading" secondItem="Mk8-gq-2ci" secondAttribute="trailing" constant="30" id="uFl-yW-v9j"/>
-                            <constraint firstItem="f1J-im-Hfz" firstAttribute="trailing" secondItem="8cu-hz-FeE" secondAttribute="trailing" constant="30" id="yvS-DV-sRY"/>
                             <constraint firstItem="U7b-lE-xjx" firstAttribute="top" secondItem="YRh-jC-TGc" secondAttribute="bottom" constant="20" id="zQ8-hh-HUa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="컨텐츠 플레이어 1.0" id="Nfb-op-0et">
+                    <navigationItem key="navigationItem" title="ContentPlayer 1.0" id="Nfb-op-0et">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="Yab-io-GyE">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Db0-lg-iSs">
                                 <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
@@ -267,13 +262,13 @@
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="voD-RY-cVh">
                                         <rect key="frame" x="20" y="141" width="283" height="32"/>
                                         <segments>
-                                            <segment title="작게"/>
-                                            <segment title="보통"/>
-                                            <segment title="크게"/>
+                                            <segment title="Small"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Large"/>
                                         </segments>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자막 배경색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvN-FQ-Csc">
-                                        <rect key="frame" x="20" y="187" width="78" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption Font Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvN-FQ-Csc">
+                                        <rect key="frame" x="20" y="187" width="143" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -281,11 +276,11 @@
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-7F-51H">
                                         <rect key="frame" x="20" y="218" width="283" height="32"/>
                                         <segments>
-                                            <segment title="검정배경에 하얀색"/>
-                                            <segment title="하얀배경에 검정색"/>
+                                            <segment title="Dark"/>
+                                            <segment title="Light"/>
                                         </segments>
                                     </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFa-YR-jYB">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write Your URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFa-YR-jYB">
                                         <rect key="frame" x="20" y="61" width="283" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -297,7 +292,7 @@
                                             <constraint firstAttribute="height" constant="50" id="sqm-TS-HxY"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="저장">
+                                        <buttonConfiguration key="configuration" style="filled" title="Save">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
                                             <color key="baseBackgroundColor" name="CPPurple"/>
                                         </buttonConfiguration>
@@ -305,14 +300,14 @@
                                             <action selector="didTouchedSaveButton:" destination="Ryu-VE-Wcb" eventType="touchUpInside" id="c5o-IH-lex"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="컨텐츠 서버 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-D0-dbu">
-                                        <rect key="frame" x="20" y="30" width="112" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Server Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCI-D0-dbu">
+                                        <rect key="frame" x="20" y="30" width="181.66666666666666" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자막 크기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyW-yX-6bO">
-                                        <rect key="frame" x="20" y="110" width="64" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption Font" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyW-yX-6bO">
+                                        <rect key="frame" x="20" y="110" width="98" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -324,7 +319,7 @@
                                             <constraint firstAttribute="height" constant="50" id="pGB-4d-d2a"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="취소">
+                                        <buttonConfiguration key="configuration" style="filled" title="Cancel">
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="23"/>
                                             <color key="baseBackgroundColor" name="CPPurple"/>
                                         </buttonConfiguration>

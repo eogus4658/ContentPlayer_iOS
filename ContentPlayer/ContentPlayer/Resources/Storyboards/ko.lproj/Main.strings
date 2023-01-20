@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "00:00:00"; ObjectID = "41w-sV-d1y"; */
+"41w-sV-d1y.text" = "00:00:00";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "8Ue-bq-FMm"; */
+"8Ue-bq-FMm.text" = "Title";
+
+/* Class = "UIButton"; configuration.title = "재생하기"; ObjectID = "BBe-TP-9BP"; */
+"BBe-TP-9BP.configuration.title" = "재생하기";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BBe-TP-9BP"; */
+"BBe-TP-9BP.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Db0-lg-iSs"; */
+"Db0-lg-iSs.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "제목"; ObjectID = "Fva-wT-u3g"; */
+"Fva-wT-u3g.text" = "제목";
+
+/* Class = "UILabel"; text = "상세"; ObjectID = "Mk8-gq-2ci"; */
+"Mk8-gq-2ci.text" = "상세";
+
+/* Class = "UINavigationItem"; title = "컨텐츠 플레이어 1.0"; ObjectID = "Nfb-op-0et"; */
+"Nfb-op-0et.title" = "컨텐츠 플레이어 1.0";
+
+/* Class = "UILabel"; text = "장르"; ObjectID = "U7b-lE-xjx"; */
+"U7b-lE-xjx.text" = "장르";
+
+/* Class = "UILabel"; text = "자막 배경색"; ObjectID = "WvN-FQ-Csc"; */
+"WvN-FQ-Csc.text" = "자막 배경색";
+
+/* Class = "UILabel"; text = "자막 크기"; ObjectID = "XyW-yX-6bO"; */
+"XyW-yX-6bO.text" = "자막 크기";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Yab-io-GyE"; */
+"Yab-io-GyE.title" = "Item";
+
+/* Class = "UISegmentedControl"; Yb0-7F-51H.segmentTitles[0] = "검정배경에 하얀색"; ObjectID = "Yb0-7F-51H"; */
+"Yb0-7F-51H.segmentTitles[0]" = "검정배경에 하얀색";
+
+/* Class = "UISegmentedControl"; Yb0-7F-51H.segmentTitles[1] = "하얀배경에 검정색"; ObjectID = "Yb0-7F-51H"; */
+"Yb0-7F-51H.segmentTitles[1]" = "하얀배경에 검정색";
+
+/* Class = "UILabel"; text = "화질"; ObjectID = "b7d-lP-CzP"; */
+"b7d-lP-CzP.text" = "화질";
+
+/* Class = "UITextField"; placeholder = "URL를 입력하세요"; ObjectID = "rFa-YR-jYB"; */
+"rFa-YR-jYB.placeholder" = "URL를 입력하세요";
+
+/* Class = "UILabel"; text = "컨텐츠 서버 주소"; ObjectID = "uCI-D0-dbu"; */
+"uCI-D0-dbu.text" = "컨텐츠 서버 주소";
+
+/* Class = "UISegmentedControl"; voD-RY-cVh.segmentTitles[0] = "작게"; ObjectID = "voD-RY-cVh"; */
+"voD-RY-cVh.segmentTitles[0]" = "작게";
+
+/* Class = "UISegmentedControl"; voD-RY-cVh.segmentTitles[1] = "보통"; ObjectID = "voD-RY-cVh"; */
+"voD-RY-cVh.segmentTitles[1]" = "보통";
+
+/* Class = "UISegmentedControl"; voD-RY-cVh.segmentTitles[2] = "크게"; ObjectID = "voD-RY-cVh"; */
+"voD-RY-cVh.segmentTitles[2]" = "크게";
+
+/* Class = "UIButton"; configuration.title = "취소"; ObjectID = "y2L-SS-vGO"; */
+"y2L-SS-vGO.configuration.title" = "취소";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "y2L-SS-vGO"; */
+"y2L-SS-vGO.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "저장"; ObjectID = "z2U-Pc-F7v"; */
+"z2U-Pc-F7v.configuration.title" = "저장";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "z2U-Pc-F7v"; */
+"z2U-Pc-F7v.normalTitle" = "Button";

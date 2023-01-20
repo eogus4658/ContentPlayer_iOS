@@ -88,6 +88,7 @@
 		A6C8A3EA2974F95700AE2268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6C8A3F52975355B00AE2268 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A6C8A3F7297A1C1000AE2268 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		A6C8A3F9297A228600AE2268 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +346,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = A69A9051296BB39A00F11580;
 			packageReferences = (
@@ -454,6 +456,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A69A9064296BB39A00F11580 /* Base */,
+				A6C8A3F9297A228600AE2268 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
