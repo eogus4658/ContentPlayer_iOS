@@ -23,8 +23,8 @@ class ContentListViewController: UIViewController {
     }
     
     private func setCollectionView() {
-//        loadContent()
-        loadContentFirebase()
+        loadContent()
+//        loadContentFirebase()
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -42,14 +42,22 @@ class ContentListViewController: UIViewController {
     }
     
     private func loadContent() {
-        let path = "localhost:8080/content_list.json"
-        guard let url = URL(string: path),
-              let data = try? Data(contentsOf: url) else {
-            
-            print("Error loading data")
-            return
-        }
-        contentData = JsonManager.shared.parse(type: Contents.self, data: data).Contents
+        guard let settingInfo = UserManager.shared.settingInfo else { return }
+        let serverAddress = settingInfo.url
+        let path = serverAddress + "content_list.json"
+        guard let url = URL(string: path) else { return }
+        let urlRequest = URLRequest(url: url)
+        URLSession.shared.dataTask(with: urlRequest) { (data, response, err) in
+            guard let data = data else {
+                print("Error loading data")
+                return
+            }
+            DispatchQueue.main.async {
+                self.contentData = JsonManager.shared.parse(type: Contents.self, data: data).Contents
+                self.collectionView.reloadData()
+            }
+        }.resume()
+        
 //        guard let path = Bundle.main.path(forResource: "content_list", ofType: "json"),
 //              let jsonString = try? String(contentsOfFile: path),
 //              let jsonData = jsonString.data(using: .utf8)
